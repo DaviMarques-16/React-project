@@ -1,6 +1,9 @@
+import styles from './Frase.module.css'
+//estilo independente: somente para este componente
+
 function Frase() {
     return (
-        <div>
+        <div className={styles.fraseContainer}>
             <p>Este é um componente contendo uma frase!</p>
         </div>
     )
