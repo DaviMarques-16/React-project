@@ -7,6 +7,8 @@ import Pessoa from './Components/Pessoa';
 import Escolas from './Components/Escolas';
 import Frase from './Components/Frase';
 
+import List from './Components/List';
+
 function App() {
 
   const nome = 'Maria'
@@ -44,6 +46,11 @@ function App() {
       />
 
       <Frase />
+
+      <br />
+      <hr />
+
+      <List />
 
     </div>
     // Passando props (propriedades) para componentes
