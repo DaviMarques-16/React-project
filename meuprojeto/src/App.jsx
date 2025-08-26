@@ -1,29 +1,26 @@
 import './App.css';
 import HelloWorld from './Components/HelloWorld';
+import SayMyName from './Components/SayMyName'
+import AlbumFav from './Components/AlbumFav';
 
 function App() {
-  const name = 'Davi';
 
-  const newName = name.toUpperCase();
-
-  function soma(a, b) {
-    return a + b
-  }
-
-  const url = "";
+  const nome = 'Maria'
+  const album = "The Life of a Showgirl"
 
   return (
     <div className="App">
-      
-      <h1>Meu Projeto React</h1>
-      <p>Primeiro projeto React</p>
-      <p>Olá, {newName}</p>
-      <p>Soma: {soma(2,4)}</p>
-      
-      <img src={url} alt='Minha Imagem' />
 
       <HelloWorld />
+
+      <SayMyName nome='Davi' /> 
+      <SayMyName nome='João' />
+      <SayMyName nome={nome} />
+
+      <AlbumFav albumfav="The Tortured Poets Department" />
+      <AlbumFav albumfav={album} />
     </div>
+    // Passando props (propriedades) para componentes
   );
 }
 
